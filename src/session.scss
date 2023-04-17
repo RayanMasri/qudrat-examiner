@@ -1,0 +1,218 @@
+#session-page {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: column;
+	overflow-y: scroll;
+	background-color: #151515;
+	scroll-behavior: smooth;
+
+	.header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		font-size: 37px;
+		padding: 15px 25px 15px 25px;
+		box-sizing: border-box;
+		width: 100%;
+		color: #e9b872;
+		border-bottom: 3px solid #e9b872;
+		font-family: IBM;
+	}
+
+	.content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		text-align: center;
+		color: #77878b;
+	}
+
+	.content > .skill {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.content > .skill > .title {
+		font-size: 25px;
+		width: 100%;
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	.question > .title {
+		font-size: 22px;
+		font-weight: bold;
+		margin-bottom: 2px;
+		position: relative;
+		width: 100%;
+	}
+
+	.question {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		margin-top: 10px;
+		direction: rtl;
+		unicode-bidi: bidi-override;
+	}
+
+	.questions {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	.answer {
+		display: flex;
+		flex-direction: row;
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 2px;
+		background-color: #305252;
+		color: #b7d5d4;
+		border-radius: 200px;
+		height: 30px;
+		font-size: 18px;
+		width: 100%;
+	}
+
+	.answer > input {
+		width: 20px;
+		height: 20px;
+		margin-left: 10px;
+		// margin-left: 4px;
+		// margin-bottom: 2.5px;
+	}
+
+	// 	<div className='model'>
+	// 	<div className='title'>{props.name}</div>
+	// 	<div className='divider'>&nbsp;</div>
+	// 	<div className='skill'>
+	// 		<div className='skill-title'>التناظر اللفظي</div>
+	// 	</div>
+	// </div>
+
+	.model {
+		width: 100%;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	.model > .title {
+		font-size: 68px;
+		font-family: IBM;
+		text-align: center;
+		width: 100%;
+		padding: 25px 0px 25px 0px;
+		color: #813405;
+	}
+
+	.model > .divider {
+		width: 100%;
+		background-color: #813405;
+		height: 3px;
+	}
+
+	.model > .skill {
+		height: max-content;
+		width: 100%;
+		position: relative;
+		border-top: 3px solid #813405;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	.model > .skill > .skill-title {
+		position: absolute;
+		top: 0;
+		right: 0;
+		margin-top: 10px;
+		margin-right: 10px;
+		font-size: 30px;
+		color: #813405;
+		font-family: IBM;
+		text-align: right;
+	}
+
+	.model > .skill > .content {
+		width: 900px;
+	}
+
+	.model > .skill > .content > .submit-btn {
+		width: 100%;
+		color: white;
+		text-transform: none;
+		font-size: 30px;
+		height: max-content;
+		border-radius: 50px;
+		margin-top: 20px;
+		margin-bottom: 5px;
+	}
+
+	.question > .answers {
+		width: 100%;
+		margin-top: 10px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	.question > .answers > .answer {
+		background-color: #4d7298;
+		border-radius: 150px;
+		color: white;
+		font-size: 25px;
+		width: 100%;
+		height: 50px;
+		margin-bottom: 10px;
+	}
+
+	.question > .title > .status {
+		height: 150px;
+		width: 150px;
+		position: absolute;
+		top: 0;
+		left: -120px;
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+	}
+
+	.question > .title > .status > div {
+		width: 50%;
+		height: 50%;
+		border: 1px solid #813405;
+		color: white;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 20px;
+	}
+
+	.skill > .content > .score {
+		margin-bottom: 5px;
+		font-size: 25px;
+		color: white;
+	}
+}
